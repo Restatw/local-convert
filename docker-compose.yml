@@ -1,0 +1,23 @@
+services:
+  # Production build served by nginx:  docker compose up -d --build web
+  web:
+    build:
+      context: .
+      target: prod
+    ports:
+      - "8090:80"
+    restart: unless-stopped
+
+  # Hot-reload dev server:  docker compose --profile dev up dev
+  dev:
+    profiles: ["dev"]
+    build:
+      context: .
+      target: dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      CHOKIDAR_USEPOLLING: "true"

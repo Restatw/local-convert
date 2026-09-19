@@ -1,0 +1,25 @@
+{
+  "name": "local-convert",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "node scripts/copy-ffmpeg-core.mjs"
+  },
+  "dependencies": {
+    "@ffmpeg/core": "0.12.10",
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@ffmpeg/util": "^0.12.2",
+    "@nuxtjs/i18n": "^10.6.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@vite-pwa/nuxt": "^1.1.1",
+    "heic-to": "^1.5.2",
+    "nuxt": "^4.5.2",
+    "tailwindcss": "^4.3.3",
+    "vue": "^3.5.43",
+    "vue-router": "^5.3.1"
+  }
+}

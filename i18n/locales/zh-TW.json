@@ -1,0 +1,276 @@
+{
+  "app": {
+    "name": "LocalConvert",
+    "tagline": "在你的裝置上轉檔"
+  },
+  "home": {
+    "title": "在你的裝置上轉檔",
+    "subtitle": "所有處理都在瀏覽器本機完成，檔案不會上傳到任何伺服器。免費、開源，可安裝成 App 離線使用。",
+    "features": {
+      "private": {
+        "title": "隱私優先",
+        "desc": "檔案永遠留在你的裝置上，沒有上傳、沒有帳號。"
+      },
+      "open": {
+        "title": "免費開源",
+        "desc": "沒有廣告、沒有浮水印、沒有次數限制。"
+      },
+      "offline": {
+        "title": "可離線使用",
+        "desc": "安裝到桌面或手機主畫面後，沒有網路也能轉檔。"
+      }
+    },
+    "searchLabel": "搜尋工具",
+    "searchPlaceholder": "搜尋工具，例如：壓縮、GIF、MOV",
+    "all": "全部",
+    "noResults": "找不到符合「{query}」的工具。",
+    "categories": "分類"
+  },
+  "tools": {
+    "mp4-to-gif": {
+      "title": "MP4 轉 GIF",
+      "desc": "把影片片段轉成動態 GIF。",
+      "seoTitle": "MP4 轉 GIF 線上轉換",
+      "fps": "影格率",
+      "fpsValue": "{n} fps",
+      "fpsHint": "影格越多越流暢，檔案也越大",
+      "width": "寬度",
+      "widthValue": "{n} px",
+      "widthHint": "比設定小的影片不會被放大。寬度越小，檔案越小",
+      "duration": "長度",
+      "durationValue": "{n} 秒",
+      "durationHint": "只會轉換影片開頭的這段時間",
+      "keywords": "動圖 動態圖 動畫 影片 梗圖"
+    },
+    "gif-to-mp4": {
+      "title": "GIF 轉 MP4",
+      "desc": "把 GIF 轉成小很多的 MP4 影片。",
+      "seoTitle": "GIF 轉 MP4 線上轉換",
+      "keywords": "動圖 動態圖 動畫 影片 縮小",
+      "dropHint": "支援 GIF 檔案"
+    },
+    "video-to-webp": {
+      "title": "影片轉動態 WebP / APNG",
+      "desc": "把影片片段轉成比 GIF 更小、更清晰的動圖。",
+      "seoTitle": "影片轉動態 WebP、APNG",
+      "keywords": "動圖 動態圖 動畫 影片 webp apng png gif 梗圖",
+      "format": "輸出格式",
+      "formatHint": {
+        "webp": "檔案最小、色彩完整，現代瀏覽器和聊天軟體都支援",
+        "apng": "無損的動態 PNG，檔案較大但色彩精準"
+      }
+    },
+    "video-compress": {
+      "title": "影片壓縮",
+      "desc": "縮小影片檔案大小，方便分享或上傳。",
+      "seoTitle": "影片壓縮",
+      "keywords": "縮小 減少 容量 檔案大小 解析度 1080p 720p 480p mp4 mov",
+      "qualityLabel": "畫質",
+      "quality": {
+        "high": "高",
+        "balanced": "平衡",
+        "small": "最小檔案"
+      },
+      "qualityHint": "畫質越低檔案越小，多數影片選「平衡」即可",
+      "resolution": "最大高度",
+      "original": "原始",
+      "resolutionHint": "降低解析度能大幅縮小檔案，比設定小的影片不會被放大"
+    },
+    "video-convert": {
+      "title": "影片格式轉換",
+      "desc": "把 MOV、MKV、WebM、AVI 等影片轉成 MP4、WebM、MOV 或 MKV。",
+      "seoTitle": "影片格式轉換",
+      "keywords": "mov mkv webm avi flv wmv 3gp mpg m4v mp4 格式 轉檔 相容",
+      "format": "輸出格式",
+      "hint": {
+        "mp4": "相容性最好，幾乎所有裝置都能播放",
+        "webm": "適合網頁使用，轉換可能較慢，檔案也可能比 MP4 大",
+        "mov": "適合 Apple 裝置與剪輯軟體",
+        "mkv": "彈性大的容器格式，許多手機和瀏覽器無法直接播放"
+      }
+    },
+    "video-trim": {
+      "title": "影片裁切",
+      "desc": "把影片剪成你想要的片段。",
+      "seoTitle": "影片裁切、剪輯",
+      "keywords": "剪輯 剪片 裁剪 縮短 分割 開始 結束 mp4 mov",
+      "modeLabel": "裁切方式",
+      "mode": {
+        "fast": "快速",
+        "precise": "精準"
+      },
+      "modeHint": {
+        "fast": "不重新編碼，幾秒完成且畫質不變，但起點可能差一兩秒",
+        "precise": "重新編碼成 MP4，剪切點會準確落在你設定的時間，速度較慢"
+      }
+    },
+    "video-mute": {
+      "title": "影片移除音軌",
+      "desc": "把影片的聲音拿掉，畫面完全不動。",
+      "seoTitle": "影片移除音軌、靜音",
+      "keywords": "靜音 無聲 消音 去除聲音 音軌 拿掉聲音"
+    },
+    "video-frame": {
+      "title": "影片擷取影格",
+      "desc": "把影片中任意一格畫面存成 PNG 或 JPG。",
+      "seoTitle": "影片截圖、擷取影格",
+      "keywords": "截圖 擷取 畫面 縮圖 封面 靜態 png jpg",
+      "format": "圖片格式",
+      "formatHint": {
+        "png": "無損，適合截圖",
+        "jpg": "檔案較小"
+      }
+    },
+    "audio-convert": {
+      "title": "音訊格式轉換",
+      "desc": "在 MP3、M4A、WAV、OGG、FLAC 之間轉換，也能從影片擷取聲音。",
+      "seoTitle": "音訊格式轉換",
+      "keywords": "mp3 m4a aac wav ogg flac wma aiff 音樂 聲音 音訊 擷取 mp4",
+      "dropHint": "支援 MP3、M4A、WAV、OGG、FLAC 與影片檔"
+    },
+    "mp4-to-mp3": {
+      "title": "MP4 轉 MP3",
+      "desc": "從影片中擷取音訊，輸出成 MP3。",
+      "seoTitle": "MP4 轉 MP3 線上轉換",
+      "keywords": "音訊 音樂 聲音 擷取 提取 影片 轉音樂"
+    },
+    "audio-trim": {
+      "title": "音訊裁切",
+      "desc": "把音訊剪成你想要的片段，例如製作鈴聲。",
+      "seoTitle": "音訊裁切、剪輯",
+      "keywords": "剪輯 剪歌 裁剪 縮短 鈴聲 開始 結束 mp3 m4a wav"
+    },
+    "audio-merge": {
+      "title": "音訊合併",
+      "desc": "把多個音訊檔依你決定的順序接成一個。",
+      "seoTitle": "音訊合併",
+      "keywords": "合併 接起來 串接 結合 播放清單 mp3 m4a wav",
+      "dropHint": "選擇兩個以上的音訊檔"
+    },
+    "audio-volume": {
+      "title": "音量調整與正規化",
+      "desc": "把音訊變大聲、變小聲，或讓整體音量一致。",
+      "seoTitle": "音訊音量調整、正規化",
+      "keywords": "大聲 小聲 放大 音量 增益 響度 正規化 標準化 mp3",
+      "modeLabel": "調整方式",
+      "mode": {
+        "normalize": "音量一致",
+        "louder": "變大聲",
+        "quieter": "變小聲"
+      },
+      "modeHint": {
+        "normalize": "把響度調整到標準水準，像串流平台那樣",
+        "louder": "音量加倍（+6 dB），並避免爆音",
+        "quieter": "音量減半（−6 dB）"
+      }
+    },
+    "heic-to-jpg": {
+      "title": "HEIC 轉 JPG",
+      "desc": "把 iPhone 的 HEIC 照片轉成 JPG 或 PNG。",
+      "seoTitle": "HEIC 轉 JPG 線上轉換",
+      "keywords": "heif iphone 照片 相片 圖片 蘋果 png",
+      "dropHint": "支援 iPhone、iPad 拍攝的 HEIC / HEIF 照片",
+      "format": "輸出格式",
+      "formatHint": {
+        "jpg": "相容性最好，適合照片",
+        "png": "無損，但檔案會大很多"
+      }
+    },
+    "image-convert": {
+      "title": "圖片格式轉換",
+      "desc": "在 PNG、JPG、WebP 之間轉換，也能縮小檔案。",
+      "seoTitle": "圖片格式轉換與壓縮",
+      "keywords": "png jpg jpeg webp gif bmp avif 壓縮 縮小 縮放 照片 相片 圖片",
+      "dropHint": "支援 PNG、JPG、WebP、GIF、BMP、AVIF",
+      "format": "輸出格式",
+      "formatHint": {
+        "jpg": "適合照片，透明的部分會變成白色",
+        "png": "無損並保留透明，但檔案較大",
+        "webp": "比 JPG、PNG 更小，但不是每個軟體都能開啟"
+      },
+      "size": "最長邊",
+      "original": "原始",
+      "sizeHint": "把大圖縮小以節省空間，比設定小的圖片不會被放大"
+    }
+  },
+  "tool": {
+    "back": "所有工具",
+    "drop": "拖放檔案到這裡，或點擊選擇",
+    "dropHint": "支援 MP4、MOV、MKV、WebM 等影片格式",
+    "change": "更換檔案",
+    "bitrate": "音質",
+    "bitrateHint": "位元率越高音質越好，檔案也越大",
+    "convert": "開始轉換",
+    "cancel": "取消",
+    "loadingEngine": "正在載入轉換引擎…",
+    "loadingEngineHint": "首次使用需下載約 30 MB,之後會快取在裝置上。",
+    "converting": "轉換中",
+    "done": "轉換完成",
+    "download": "下載 {format}",
+    "share": "分享或儲存",
+    "another": "轉換其他檔案",
+    "localNote": "檔案只在本機處理，不會上傳。",
+    "error": {
+      "title": "轉換失敗",
+      "noAudio": "這個檔案沒有可擷取的音訊軌。",
+      "engine": "轉換引擎載入失敗，請確認網路連線後重試。",
+      "failed": "無法轉換這個檔案，可能是格式不支援或檔案已損毀。",
+      "unknown": "發生未預期的錯誤，請重試。",
+      "retry": "重試",
+      "unsupported": "這個瀏覽器無法輸出這種格式，請改選其他格式或換一個瀏覽器。"
+    },
+    "imageQuality": {
+      "label": "畫質",
+      "hint": "畫質越低檔案越小",
+      "high": "高",
+      "balanced": "平衡",
+      "small": "最小檔案"
+    },
+    "filesCount": "{n} 個檔案",
+    "addFiles": "新增檔案",
+    "moveUp": "上移",
+    "moveDown": "下移",
+    "remove": "移除",
+    "needTwo": "至少需要兩個檔案才能繼續。",
+    "clip": {
+      "start": "開始",
+      "end": "結束",
+      "time": "時間點",
+      "seconds": "秒",
+      "useCurrent": "使用播放器目前位置",
+      "toEnd": "直到結尾",
+      "total": "總長度：{time}",
+      "noPreview": "這個瀏覽器無法預覽此檔案，請直接輸入秒數。",
+      "invalid": "結束時間必須晚於開始時間。"
+    },
+    "audio": {
+      "format": "輸出格式",
+      "formatHint": {
+        "mp3": "相容性最好，到處都能播放",
+        "m4a": "MP4 容器裝 AAC，小檔案也有不錯音質，Apple 裝置最常用",
+        "wav": "未壓縮，音質完美但檔案很大",
+        "ogg": "開放格式，部分 Apple 裝置無法播放",
+        "flac": "無損壓縮，比 WAV 小，但不是每個播放器都支援"
+      }
+    }
+  },
+  "install": {
+    "title": "安裝 LocalConvert",
+    "desc": "加到桌面或主畫面，像 App 一樣使用，也能離線轉檔。",
+    "action": "安裝",
+    "dismiss": "稍後再說",
+    "iosHint": "在 Safari 點選分享按鈕，再選擇「加入主畫面」即可安裝。"
+  },
+  "footer": {
+    "text": "開源專案。檔案僅在本機處理。"
+  },
+  "notFound": {
+    "title": "找不到頁面",
+    "back": "回到首頁"
+  },
+  "categories": {
+    "video": "影片",
+    "audio": "音訊",
+    "image": "圖片"
+  }
+}

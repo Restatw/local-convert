@@ -1,0 +1,276 @@
+{
+  "app": {
+    "name": "LocalConvert",
+    "tagline": "Convert files on your device"
+  },
+  "home": {
+    "title": "Convert files on your device",
+    "subtitle": "Everything runs locally in your browser. Your files are never uploaded to a server. Free, open source, and installable for offline use.",
+    "features": {
+      "private": {
+        "title": "Private by design",
+        "desc": "Files stay on your device. No uploads, no accounts."
+      },
+      "open": {
+        "title": "Free and open source",
+        "desc": "No ads, no watermarks, no usage limits."
+      },
+      "offline": {
+        "title": "Works offline",
+        "desc": "Install it on your desktop or home screen and convert without a connection."
+      }
+    },
+    "searchLabel": "Search tools",
+    "searchPlaceholder": "Search tools, e.g. compress, GIF, MOV",
+    "all": "All",
+    "noResults": "No tool matches “{query}”.",
+    "categories": "Categories"
+  },
+  "tools": {
+    "mp4-to-gif": {
+      "title": "MP4 to GIF",
+      "desc": "Turn a video clip into an animated GIF.",
+      "seoTitle": "MP4 to GIF converter",
+      "fps": "Frame rate",
+      "fpsValue": "{n} fps",
+      "fpsHint": "More frames look smoother but make a larger file",
+      "width": "Width",
+      "widthValue": "{n} px",
+      "widthHint": "Smaller videos are never enlarged. A narrower GIF is much smaller",
+      "duration": "Length",
+      "durationValue": "{n} s",
+      "durationHint": "Only the first part of the video is converted",
+      "keywords": "animated animation clip video meme"
+    },
+    "gif-to-mp4": {
+      "title": "GIF to MP4",
+      "desc": "Turn a GIF into a much smaller MP4 video.",
+      "seoTitle": "GIF to MP4 converter",
+      "keywords": "animated animation video smaller shrink",
+      "dropHint": "Works with GIF files"
+    },
+    "video-to-webp": {
+      "title": "Video to animated WebP / APNG",
+      "desc": "Turn a video clip into a smaller, sharper animation than GIF.",
+      "seoTitle": "Video to animated WebP and APNG converter",
+      "keywords": "animated animation clip webp apng png gif meme",
+      "format": "Output format",
+      "formatHint": {
+        "webp": "Smallest files, full color. Works in modern browsers and chat apps",
+        "apng": "Lossless animated PNG. Larger files, but exact colors"
+      }
+    },
+    "video-compress": {
+      "title": "Compress video",
+      "desc": "Make a video file smaller for sharing or uploading.",
+      "seoTitle": "Video compressor",
+      "keywords": "shrink reduce size smaller resolution 1080p 720p 480p mp4 mov",
+      "qualityLabel": "Quality",
+      "quality": {
+        "high": "High",
+        "balanced": "Balanced",
+        "small": "Smallest"
+      },
+      "qualityHint": "Lower quality gives a smaller file. Balanced suits most videos",
+      "resolution": "Maximum height",
+      "original": "Original",
+      "resolutionHint": "Lowering the resolution shrinks the file a lot. Smaller videos are never enlarged"
+    },
+    "video-convert": {
+      "title": "Video format converter",
+      "desc": "Convert MOV, MKV, WebM, AVI and more to MP4, WebM, MOV or MKV.",
+      "seoTitle": "Video format converter",
+      "keywords": "mov mkv webm avi flv wmv 3gp mpg m4v mp4 convert format",
+      "format": "Output format",
+      "hint": {
+        "mp4": "The most compatible format. Plays almost everywhere",
+        "webm": "For the web. May be slower to convert and larger than MP4",
+        "mov": "For Apple devices and editing apps",
+        "mkv": "Flexible container. Many phones and browsers cannot play it"
+      }
+    },
+    "video-trim": {
+      "title": "Trim video",
+      "desc": "Cut a video down to the part you want.",
+      "seoTitle": "Video trimmer and cutter",
+      "keywords": "cut clip crop shorten split start end mp4 mov",
+      "modeLabel": "Cutting method",
+      "mode": {
+        "fast": "Fast",
+        "precise": "Precise"
+      },
+      "modeHint": {
+        "fast": "Does not re-encode, so it takes seconds and keeps full quality. The start may shift by a second or two",
+        "precise": "Re-encodes to MP4 so the cut lands exactly on your times. Slower"
+      }
+    },
+    "video-mute": {
+      "title": "Remove audio from video",
+      "desc": "Strip the sound from a video without touching the picture.",
+      "seoTitle": "Remove audio from video",
+      "keywords": "mute silent sound soundtrack strip audio track no sound"
+    },
+    "video-frame": {
+      "title": "Video frame to image",
+      "desc": "Save any frame of a video as a PNG or JPG.",
+      "seoTitle": "Extract a frame from a video",
+      "keywords": "screenshot capture still snapshot thumbnail picture png jpg",
+      "format": "Image format",
+      "formatHint": {
+        "png": "Lossless. Best for screenshots",
+        "jpg": "Smaller files"
+      }
+    },
+    "audio-convert": {
+      "title": "Audio converter",
+      "desc": "Convert between MP3, M4A, WAV, OGG and FLAC, or pull the sound out of a video.",
+      "seoTitle": "Audio format converter",
+      "keywords": "mp3 m4a aac wav ogg flac wma aiff music sound extract mp4",
+      "dropHint": "Works with MP3, M4A, WAV, OGG, FLAC and video files"
+    },
+    "mp4-to-mp3": {
+      "title": "MP4 to MP3",
+      "desc": "Extract the audio track from a video as an MP3.",
+      "seoTitle": "MP4 to MP3 converter",
+      "keywords": "audio extract sound music video mov mkv webm m4a"
+    },
+    "audio-trim": {
+      "title": "Trim audio",
+      "desc": "Cut an audio file down to the part you want, for example to make a ringtone.",
+      "seoTitle": "Audio trimmer and cutter",
+      "keywords": "cut clip ringtone shorten start end mp3 m4a wav"
+    },
+    "audio-merge": {
+      "title": "Merge audio",
+      "desc": "Join several audio files into one, in the order you choose.",
+      "seoTitle": "Audio merger",
+      "keywords": "join combine concatenate append playlist mp3 m4a wav",
+      "dropHint": "Choose two or more audio files"
+    },
+    "audio-volume": {
+      "title": "Volume and normalize",
+      "desc": "Make audio louder or quieter, or even out the loudness.",
+      "seoTitle": "Audio volume changer and normalizer",
+      "keywords": "louder quieter boost loudness gain amplify level normalize mp3",
+      "modeLabel": "Adjustment",
+      "mode": {
+        "normalize": "Even out",
+        "louder": "Louder",
+        "quieter": "Quieter"
+      },
+      "modeHint": {
+        "normalize": "Brings the loudness to a standard level, like streaming services do",
+        "louder": "Doubles the volume (+6 dB) without clipping",
+        "quieter": "Halves the volume (−6 dB)"
+      }
+    },
+    "heic-to-jpg": {
+      "title": "HEIC to JPG",
+      "desc": "Convert iPhone HEIC photos to JPG or PNG.",
+      "seoTitle": "HEIC to JPG converter",
+      "keywords": "heif iphone photo picture apple png",
+      "dropHint": "Works with HEIC and HEIF photos from iPhone or iPad",
+      "format": "Output format",
+      "formatHint": {
+        "jpg": "Opens everywhere. Best for photos",
+        "png": "Lossless, but the file is much larger"
+      }
+    },
+    "image-convert": {
+      "title": "Image converter",
+      "desc": "Convert between PNG, JPG and WebP, and shrink the file size.",
+      "seoTitle": "Image converter and compressor",
+      "keywords": "png jpg jpeg webp gif bmp avif compress resize shrink photo picture",
+      "dropHint": "Works with PNG, JPG, WebP, GIF, BMP and AVIF",
+      "format": "Output format",
+      "formatHint": {
+        "jpg": "Best for photos. Transparent areas become white",
+        "png": "Lossless and keeps transparency, but files are larger",
+        "webp": "Smaller than JPG and PNG. Not every app can open it"
+      },
+      "size": "Longest side",
+      "original": "Original",
+      "sizeHint": "Shrinks large images to save space. Smaller images are never enlarged"
+    }
+  },
+  "tool": {
+    "back": "All tools",
+    "drop": "Drop a file here, or tap to choose",
+    "dropHint": "Works with MP4, MOV, MKV, WebM and other video formats",
+    "change": "Change file",
+    "bitrate": "Quality",
+    "bitrateHint": "A higher bitrate sounds better but makes a larger file",
+    "convert": "Convert",
+    "cancel": "Cancel",
+    "loadingEngine": "Loading the converter…",
+    "loadingEngineHint": "The first run downloads about 30 MB. It is cached on your device afterwards.",
+    "converting": "Converting",
+    "done": "Done",
+    "download": "Download {format}",
+    "share": "Share or save",
+    "another": "Convert another file",
+    "localNote": "Your file is processed locally and never uploaded.",
+    "error": {
+      "title": "Conversion failed",
+      "noAudio": "This file has no audio track to extract.",
+      "engine": "The converter failed to load. Check your connection and try again.",
+      "failed": "This file could not be converted. The format may be unsupported or the file damaged.",
+      "unknown": "Something unexpected went wrong. Please try again.",
+      "retry": "Try again",
+      "unsupported": "This browser cannot create this format. Try another format or browser."
+    },
+    "imageQuality": {
+      "label": "Quality",
+      "hint": "Lower quality gives a smaller file",
+      "high": "High",
+      "balanced": "Balanced",
+      "small": "Smallest"
+    },
+    "filesCount": "{n} files",
+    "addFiles": "Add files",
+    "moveUp": "Move up",
+    "moveDown": "Move down",
+    "remove": "Remove",
+    "needTwo": "Add at least two files to continue.",
+    "clip": {
+      "start": "Start",
+      "end": "End",
+      "time": "Time",
+      "seconds": "sec",
+      "useCurrent": "Use the player position",
+      "toEnd": "Until the end",
+      "total": "Total length: {time}",
+      "noPreview": "This browser cannot preview the file. Enter the times in seconds instead.",
+      "invalid": "The end must be after the start."
+    },
+    "audio": {
+      "format": "Output format",
+      "formatHint": {
+        "mp3": "Plays everywhere",
+        "m4a": "AAC in an MP4 container. Good quality at small sizes, and the format Apple devices prefer",
+        "wav": "Uncompressed. Perfect quality, very large files",
+        "ogg": "Open format. Some Apple devices cannot play it",
+        "flac": "Lossless and smaller than WAV. Not every player supports it"
+      }
+    }
+  },
+  "install": {
+    "title": "Install LocalConvert",
+    "desc": "Add it to your desktop or home screen to use it like an app, even offline.",
+    "action": "Install",
+    "dismiss": "Not now",
+    "iosHint": "In Safari, tap the Share button, then choose Add to Home Screen."
+  },
+  "footer": {
+    "text": "Open source. Files are processed only on your device."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "back": "Back to home"
+  },
+  "categories": {
+    "video": "Video",
+    "audio": "Audio",
+    "image": "Image"
+  }
+}
