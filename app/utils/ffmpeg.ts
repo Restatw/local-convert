@@ -5,6 +5,18 @@ import type { FFmpeg } from '@ffmpeg/ffmpeg'
 let instance: FFmpeg | null = null
 let loading: Promise<FFmpeg> | null = null
 
+// The wasm is stored as several parts (see scripts/copy-ffmpeg-core.mjs); fetch and join them.
+async function fetchWasmBlobURL(base: string): Promise<string> {
+  const get = async (name: string) => {
+    const res = await fetch(`${base}/${name}`)
+    if (!res.ok) throw new Error(`Failed to load ${name}: ${res.status}`)
+    return res
+  }
+  const { parts } = (await (await get('ffmpeg-core.wasm.json')).json()) as { parts: string[] }
+  const buffers = await Promise.all(parts.map(async (name) => (await get(name)).arrayBuffer()))
+  return URL.createObjectURL(new Blob(buffers, { type: 'application/wasm' }))
+}
+
 async function load(): Promise<FFmpeg> {
   const [{ FFmpeg }, { toBlobURL }] = await Promise.all([
     import('@ffmpeg/ffmpeg'),
@@ -14,7 +26,7 @@ async function load(): Promise<FFmpeg> {
   const ffmpeg = new FFmpeg()
   await ffmpeg.load({
     coreURL: await toBlobURL(`${base}/ffmpeg-core.js`, 'text/javascript'),
-    wasmURL: await toBlobURL(`${base}/ffmpeg-core.wasm`, 'application/wasm'),
+    wasmURL: await fetchWasmBlobURL(base),
   })
   instance = ffmpeg
   return ffmpeg

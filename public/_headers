@@ -1,0 +1,17 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# service worker 與 manifest 必須每次重新驗證,否則無法更新
+/sw.js
+  Cache-Control: no-cache
+/workbox-*
+  Cache-Control: no-cache
+/manifest.webmanifest
+  Cache-Control: no-cache
+
+# 帶雜湊 / 帶版本號的檔案可長期快取(勿與上面的規則重疊,否則 Cache-Control 會被合併)
+/_nuxt/*
+  Cache-Control: public, max-age=31536000, immutable
+/ffmpeg/*
+  Cache-Control: public, max-age=31536000, immutable

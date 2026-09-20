@@ -32,7 +32,9 @@ app/components/MediaClipPicker.vue  preview + start/end time inputs (trim, extra
 app/components/OptionGroup.vue  radio-button group used for options
 i18n/locales/*.json          zh-TW and en strings
 nginx/                       production server config (cache headers, wasm/manifest MIME)
-scripts/copy-ffmpeg-core.mjs copies the ffmpeg core into public/ffmpeg/<version>/ on install
+scripts/copy-ffmpeg-core.mjs copies the ffmpeg core into public/ffmpeg/<version>/ on install (wasm split in <25 MiB parts)
+public/_headers              Cloudflare Pages cache / security headers (same rules as nginx/)
+.github/workflows/deploy.yml build + deploy to Cloudflare Pages on push to master
 ```
 
 ### Add a tool
@@ -43,6 +45,20 @@ scripts/copy-ffmpeg-core.mjs copies the ffmpeg core into public/ffmpeg/<version>
 3. Add `tools.<id>.title`, `.desc`, `.seoTitle`, `.keywords` (extra search words) to both locale files.
 
 The page `/tools/<id>` and its `/en` twin are generated automatically.
+
+## Deploy to Cloudflare Pages (https://convert.re95.org)
+
+Pushing to `master` runs `.github/workflows/deploy.yml`: `npm run generate`, then `wrangler pages deploy .output/public`.
+Cache rules live in `public/_headers`. Pages rejects files over 25 MiB, so `scripts/copy-ffmpeg-core.mjs` splits
+`ffmpeg-core.wasm` into parts and `app/utils/ffmpeg.ts` joins them at load time.
+
+One-time setup:
+1. **API token:** Cloudflare → My Profile → API Tokens → custom token with `Account › Cloudflare Pages › Edit`.
+2. **GitHub secrets** (repo → Settings → Secrets and variables → Actions): `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`.
+3. **Pages project:** created by the workflow on first run (`local-convert`, Direct Upload). To do it by hand:
+   `npx wrangler pages project create local-convert --production-branch=master`
+4. **Custom domain:** Pages project → Custom domains → add `convert.re95.org` (DNS in Cloudflare creates the CNAME).
+5. (Recommended) Turn off Rocket Loader and Auto Minify so Cloudflare does not rewrite the service worker.
 
 ## Notes
 

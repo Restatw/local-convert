@@ -109,7 +109,8 @@ export default defineNuxtConfig({
           options: {
             cacheName: 'ffmpeg-core',
             cacheableResponse: { statuses: [200] },
-            expiration: { maxEntries: 6 },
+            // Per core version: the js, the parts manifest and the wasm parts.
+            expiration: { maxEntries: 12 },
           },
         },
       ],
